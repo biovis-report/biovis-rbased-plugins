@@ -60,10 +60,10 @@ shinyUI(fluidPage(
       sliderInput("boxplot_r_y_axis_len", "Y Axis Length :",
                   min = 1, max = 25, value = 3, step = 1),
       selectInput("plot_color_mode", "Color Scale:",
-                  choices = ChoppyReportR::get_mode_lst(),
+                  choices = BioVisReportR::get_mode_lst(),
                   selected = "color"),
       selectInput("plot_palname", "Color Palette:",
-                  choices = ChoppyReportR::get_discrete_pal_lst(),
+                  choices = BioVisReportR::get_discrete_pal_lst(),
                   selected = "npg")
     )
   )
