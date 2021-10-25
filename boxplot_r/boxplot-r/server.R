@@ -84,7 +84,7 @@ shinyServer(function(input, output, session) {
                     legend.position=input$boxplot_r_legend_pos) +
               ylim(min(dataFunc()[, input$boxplot_r_y], 0)*1.2,
                     max(dataFunc()[, input$boxplot_r_y]) + input$boxplot_r_y_axis_len) +
-              BioVisReportR::get_color_func(palname=reactiveVar$palname, mode=reactiveVar$mode)()
+              ChoppyReportR::get_color_func(palname=reactiveVar$palname, mode=reactiveVar$mode)()
           ggplotly(p) %>% layout(autosize=TRUE, boxmode = "group")
         })
       } else {
@@ -106,7 +106,7 @@ shinyServer(function(input, output, session) {
                     legend.position=input$boxplot_r_legend_pos) +
               ylim(min(dataFunc()[, input$boxplot_r_y], 0)*1.2,
                     max(dataFunc()[, input$boxplot_r_y]) + input$boxplot_r_y_axis_len) +
-              BioVisReportR::get_color_func(palname=reactiveVar$palname, mode=reactiveVar$mode)()
+              ChoppyReportR::get_color_func(palname=reactiveVar$palname, mode=reactiveVar$mode)()
           print(p)
         })
       }
