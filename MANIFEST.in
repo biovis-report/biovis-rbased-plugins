@@ -1,0 +1,8 @@
+include LICENSE.txt
+include README.md
+include requirements.txt
+recursive-include pie_chart *
+recursive-exclude * __pycache__
+recursive-exclude * *.pyc
+recursive-exclude * *.pyo
+recursive-exclude pie_chart.egg-info *

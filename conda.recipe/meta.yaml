@@ -1,0 +1,53 @@
+{% set data = load_setup_py_data() %}
+# {% set version = '0.1.0' %}
+# {% set url = 'https://github.com/biovis-report/boxplot-r' %}
+# {% set description = 'Interactive boxplot visualization from a Shiny app(r version).' %}
+
+package:
+  name: boxplot-r
+  version: {{ data.version }}
+
+
+source:
+  - path: ../
+
+
+build:
+  include_recipe: True
+
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - r-devtools
+    - r-dplyr
+    - r-shiny
+    - r-plotly
+    - r-ggpubr
+    - r-rcolorbrewer
+    - r-shinybs
+    - r-shinyjs
+    - r-ggplot2
+    - r-d3heatmap
+    # Biovis Channel
+    - r-configr
+    - biovis-media-extension
+    - biovis-report
+
+# test:
+#   imports:
+#     - biovis_media_extension
+
+about:
+  home: {{ data.url }}
+  license: MIT
+  license_file: LICENSE.md
+  license_family: MIT
+
+  summary: {{ data.description }}
+  description: {{ data.description }}
+  doc_url: https://github.com/biovis-report/boxplot-r/blob/master/README.md
+  dev_url: {{ data.url }}
