@@ -5,7 +5,7 @@ from boxplot_r.version import get_version
 setup(
     name='boxplot-r',
     version=get_version(),
-    description='An biovis-report plugin to draw an interactive boxplot.',
+    description='A biovis-report plugin to draw an interactive boxplot.',
     long_description='The boxplot plugin will draw an interactive boxplot by using rlang library.',
     keywords='boxplot-r,biovis-plugin',
     url='https://github.com/biovis-report/boxplot-r/',

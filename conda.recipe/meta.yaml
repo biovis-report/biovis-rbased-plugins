@@ -36,6 +36,7 @@ requirements:
     - r-configr
     - biovis-media-extension
     - biovis-report
+    - r-biovis-reportr
 
 # test:
 #   imports:
