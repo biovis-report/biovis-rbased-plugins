@@ -1,10 +1,7 @@
 {% set data = load_setup_py_data() %}
-# {% set version = '0.1.0' %}
-# {% set url = 'https://github.com/biovis-report/boxplot-r' %}
-# {% set description = 'Interactive boxplot visualization from a Shiny app(r version).' %}
 
 package:
-  name: boxplot-r
+  name: biovis-base-plugins
   version: {{ data.version }}
 
 
@@ -18,10 +15,11 @@ build:
 
 requirements:
   build:
-    - python
+    - python {{ python }}
     - setuptools
 
   run:
+    - python {{ python }}
     - r-devtools
     - r-dplyr
     - r-shiny
@@ -30,13 +28,20 @@ requirements:
     - r-rcolorbrewer
     - r-shinybs
     - r-shinyjs
+    - r-shinydashboard
+    - r-ggvis
     - r-ggplot2
+    - r-colourpicker
     - r-d3heatmap
+    - r-shinycssloaders
     # Biovis Channel
-    - r-configr
-    - biovis-media-extension
-    - biovis-report
-    - r-biovis-reportr
+    - r-scatterd3
+    - r-ggcorrplot
+    - r-upsetr
+    - r-configr >=0.3.4
+    - biovis-media-extension >=0.1.4
+    - biovis-report >=0.4.0
+    - r-biovis-reportr >=0.1.0
 
 # test:
 #   imports:
@@ -50,5 +55,5 @@ about:
 
   summary: {{ data.description }}
   description: {{ data.description }}
-  doc_url: https://github.com/biovis-report/boxplot-r/blob/master/README.md
+  doc_url: https://github.com/biovis-report/biovis-base-plugins/blob/master/README.md
   dev_url: {{ data.url }}

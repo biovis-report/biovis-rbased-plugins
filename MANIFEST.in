@@ -1,8 +1,8 @@
 include LICENSE.txt
 include README.md
 include requirements.txt
-recursive-include boxplot_r *
+recursive-include * *
 recursive-exclude * __pycache__
 recursive-exclude * *.pyc
 recursive-exclude * *.pyo
-recursive-exclude boxplot_r.egg-info *
+recursive-exclude *.egg-info *

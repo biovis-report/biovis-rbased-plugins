@@ -1,14 +1,14 @@
 from setuptools import setup, find_packages
-from boxplot_r.version import get_version
 
+def get_version():
+    return '0.1.0'
 
 setup(
-    name='boxplot-r',
+    name='biovis-base-plugins',
     version=get_version(),
-    description='A biovis-report plugin to draw an interactive boxplot.',
-    long_description='The boxplot plugin will draw an interactive boxplot by using rlang library.',
-    keywords='boxplot-r,biovis-plugin',
-    url='https://github.com/biovis-report/boxplot-r/',
+    description='A set of base plugins for biovis-report to draw interactive plots.',
+    keywords='biovis-plugin',
+    url='https://github.com/biovis-report/biovis-base-plugins',
     author='Jingcheng Yang',
     author_email='yjcyxky@163.com',
     license='MIT',
@@ -33,7 +33,21 @@ setup(
     packages=find_packages(),
     entry_points={
         'biovis.plugins': [
-            'boxplot-r = boxplot_r.boxplot:BoxplotRPlugin'
+            'boxplot-r = boxplot_r.boxplot:BoxplotRPlugin',
+            'corrplot-r = corrplot_r.corrplot_r:CorrPlotRPlugin',
+            'datatable-js = datatable_js.datatable:DataTableJSPlugin',
+            'density-plot = density_plot.density_plot:DensityPlotPlugin',
+            'group-boxplot = group_boxplot.group_boxplot:GroupBoxPlotPlugin',
+            'heatmap-d3 = heatmap_d3.heatmap:HeatmapD3Plugin',
+            'heatmap-r = heatmap_r.heatmap.HeatmapRPlugin',
+            'multiqc = multiqc.multiqc:MultiqcPlugin',
+            'pivot-table-js = pivot_table_js.pivot_table:PivotTableJSPlugin',
+            'rocket-plot-r = rocket_plot_r.rocket_plot:RocketPlotRPlugin',
+            'scatter-plot = scatter_plot.scatter_plot:ScatterPlotPlugin',
+            'stack-barplot-r = stack_barplot_r.stack_barplot:StackBarPlotPlugin',
+            'tabulator = tabulator.tabulator:Tabulator',
+            'upset-r = upset_r.upset:UpsetRPlugin',
+            'violin-plot-r = violin_plot_r.violin_plot:ViolinPlotRPlugin'
         ]
     }
 )
