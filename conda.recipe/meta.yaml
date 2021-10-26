@@ -26,7 +26,7 @@ requirements:
     - r-plotly
     - r-ggpubr
     - r-rcolorbrewer
-    - r-shinybs
+    - r-shinybs 
     - r-shinyjs
     - r-shinydashboard
     - r-ggvis
@@ -38,10 +38,8 @@ requirements:
     - r-scatterd3
     - r-ggcorrplot
     - r-upsetr
-    - r-configr >=0.3.4
-    - biovis-media-extension >=0.1.4
-    - biovis-report >=0.4.0
-    - r-biovis-reportr >=0.1.0
+    - r-configr
+    - r-biovis-reportr
 
 # test:
 #   imports:
