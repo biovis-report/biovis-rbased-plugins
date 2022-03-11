@@ -35,7 +35,7 @@ setup(
         'biovis.plugins': [
             'boxplot-r = boxplot_r.boxplot:BoxplotRPlugin',
             'corrplot-r = corrplot_r.corrplot_r:CorrPlotRPlugin',
-            'datatable-js = datatable_js.datatable:DataTableJSPlugin',
+            'data-table-js = datatable_js.datatable:DataTableJSPlugin',
             'density-plot = density_plot.density_plot:DensityPlotPlugin',
             'group-boxplot = group_boxplot.group_boxplot:GroupBoxPlotPlugin',
             'heatmap-d3 = heatmap_d3.heatmap:HeatmapD3Plugin',
