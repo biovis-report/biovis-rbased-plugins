@@ -39,7 +39,7 @@ setup(
             'density-plot = density_plot.density_plot:DensityPlotPlugin',
             'group-boxplot = group_boxplot.group_boxplot:GroupBoxPlotPlugin',
             'heatmap-d3 = heatmap_d3.heatmap:HeatmapD3Plugin',
-            'heatmap-r = heatmap_r.heatmap.HeatmapRPlugin',
+            'heatmap-r = heatmap_r.heatmap:HeatmapRPlugin',
             'multiqc = multiqc.multiqc:MultiqcPlugin',
             'pivot-table-js = pivot_table_js.pivot_table:PivotTableJSPlugin',
             'rocket-plot-r = rocket_plot_r.rocket_plot:RocketPlotRPlugin',
