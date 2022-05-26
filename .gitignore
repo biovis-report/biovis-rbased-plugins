@@ -1,2 +1,5 @@
 dist/
 biovis_base_plugins.egg-info/
+*.pyc
+__pycache__
+.DS_Store

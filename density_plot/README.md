@@ -1,4 +1,4 @@
-## `density-plot[biovis-report-plugin]`
+## `density-plot`
 ### Description
 Interactive density plot visualization from a Shiny app(r version).
 

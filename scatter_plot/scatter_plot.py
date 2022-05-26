@@ -5,19 +5,19 @@ import os
 from biovis_media_extension.plugin import BasePlugin
 
 
-class ScatterPlotPlugin(BasePlugin):
+class ScatterPlotRPlugin(BasePlugin):
     """
-    Scatter plot plugin for biovis_media_extension.
+    ScatterPlotRPlugin for biovis_media_extension.
 
     :Example:
-    @scatter-plot()
+    @scatter-plot-r()
     """
-    plugin_name = 'scatter-plot'
+    plugin_name = 'scatter-plot-r'
     plugin_dir = os.path.dirname(os.path.abspath(__file__))
     is_server = True
 
     def __init__(self, *args, **kwargs):
-        super(ScatterPlotPlugin, self).__init__(*args, **kwargs)
+        super(ScatterPlotRPlugin, self).__init__(*args, **kwargs)
 
     def check_plugin_args(self, **kwargs):
         pass
