@@ -1,7 +1,7 @@
 {% set data = load_setup_py_data() %}
 
 package:
-  name: biovis-base-plugins
+  name: biovis-rbase-plugins
   version: {{ data.version }}
 
 
@@ -20,7 +20,6 @@ requirements:
 
   run:
     - python {{ python }}
-    - r-devtools
     - r-dplyr
     - r-shiny
     - r-plotly
@@ -34,16 +33,30 @@ requirements:
     - r-colourpicker
     - r-d3heatmap
     - r-shinycssloaders
+    - r-ggcorrplot ~=0.1
+    - r-upsetr ~=1.3
+    - r-scatterd3 ~=0.8
     # Biovis Channel
-    - r-scatterd3
-    - r-ggcorrplot
-    - r-upsetr
-    - r-configr
-    - r-biovis-reportr
+    - r-mutsneedle ~=0.1
+    - r-configr ~=0.3
+    - r-biovis-reportr ~=0.1
 
-# test:
-#   imports:
-#     - biovis_media_extension
+test:
+  imports:
+    - barplot.barplot:BarPlotRPlugin
+    - boxplot.boxplot:BoxPlotRPlugin
+    - corrplot.corrplot:CorrPlotRPlugin
+    - density_plot.density_plot:DensityPlotRPlugin
+    - grouped_boxplot.grouped_boxplot:GroupedBoxPlotRPlugin
+    - heatmap_r.heatmap:HeatmapRPlugin
+    - heatmap_d3.heatmap:HeatmapD3RPlugin
+    - lineplot.lineplot:LinePlotRPlugin
+    - lollipop_plot.lollipop_plot:LollipopPlotRPlugin
+    - rocket_plot.rocket_plot:RocketPlotRPlugin
+    - scatter_plot.scatter_plot:ScatterPlotRPlugin
+    - stack_barplot.stack_barplot:StackBarPlotRPlugin
+    - upset.upset:UpsetRPlugin
+    - violin_plot.violin_plot:ViolinPlotRPlugin
 
 about:
   home: {{ data.url }}
@@ -53,5 +66,5 @@ about:
 
   summary: {{ data.description }}
   description: {{ data.description }}
-  doc_url: https://github.com/biovis-report/biovis-base-plugins/blob/master/README.md
+  doc_url: https://github.com/biovis-report/biovis-rbase-plugins/blob/master/README.md
   dev_url: {{ data.url }}

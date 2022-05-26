@@ -1,3 +1,3 @@
-# biovis-base-plugins
+# biovis-rbase-plugins
 
-A set of base plugins for bivis-report.
+A set of R based plugins for bivis-report.
