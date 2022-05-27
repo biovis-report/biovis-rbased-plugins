@@ -96,7 +96,7 @@ shinyUI(fluidPage(
         overflow: hidden;
       }
     "),
-    tags$script(src="http://nordata-cdn.oss-cn-shanghai.aliyuncs.com/biovis-report/2019-02-27-iframeResizer.contentWindow.min.js",
+    tags$script(src="https://cdn.biovis.report/assets/2019-02-27-iframeResizer.contentWindow.min.js",
                 type="text/javascript")
   ),
   sidebarLayout(

@@ -6,3 +6,4 @@ recursive-exclude * __pycache__
 recursive-exclude * *.pyc
 recursive-exclude * *.pyo
 recursive-exclude *.egg-info *
+recursive-exclude .git *

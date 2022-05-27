@@ -20,6 +20,7 @@ requirements:
 
   run:
     - python {{ python }}
+    - biovis-report ~=0.5
     - r-dplyr
     - r-shiny
     - r-plotly
@@ -43,20 +44,20 @@ requirements:
 
 test:
   imports:
-    - barplot.barplot:BarPlotRPlugin
-    - boxplot.boxplot:BoxPlotRPlugin
-    - corrplot.corrplot:CorrPlotRPlugin
-    - density_plot.density_plot:DensityPlotRPlugin
-    - grouped_boxplot.grouped_boxplot:GroupedBoxPlotRPlugin
-    - heatmap_r.heatmap:HeatmapRPlugin
-    - heatmap_d3.heatmap:HeatmapD3RPlugin
-    - lineplot.lineplot:LinePlotRPlugin
-    - lollipop_plot.lollipop_plot:LollipopPlotRPlugin
-    - rocket_plot.rocket_plot:RocketPlotRPlugin
-    - scatter_plot.scatter_plot:ScatterPlotRPlugin
-    - stack_barplot.stack_barplot:StackBarPlotRPlugin
-    - upset.upset:UpsetRPlugin
-    - violin_plot.violin_plot:ViolinPlotRPlugin
+    - barplot.barplot
+    - boxplot.boxplot
+    - corrplot.corrplot
+    - density_plot.density_plot
+    - grouped_boxplot.grouped_boxplot
+    - heatmap.heatmap
+    - heatmap_d3.heatmap
+    - lineplot.lineplot
+    - lollipop_plot.lollipop_plot
+    - rocket_plot.rocket_plot
+    - scatter_plot.scatter_plot
+    - stack_barplot.stack_barplot
+    - upset.upset
+    - violin_plot.violin_plot
 
 about:
   home: {{ data.url }}

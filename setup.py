@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 def get_version():
-    return '0.1.0'
+    return '0.5.0'
 
 setup(
     name='biovis-rbase-plugins',
@@ -37,7 +37,7 @@ setup(
             'corrplot-r = corrplot.corrplot:CorrPlotRPlugin',
             'density-plot-r = density_plot.density_plot:DensityPlotRPlugin',
             'grouped-boxplot-r = grouped_boxplot.grouped_boxplot:GroupedBoxPlotRPlugin',
-            'heatmap-r = heatmap_r.heatmap:HeatmapRPlugin',
+            'heatmap-r = heatmap.heatmap:HeatmapRPlugin',
             'heatmap-d3-r = heatmap_d3.heatmap:HeatmapD3RPlugin',
             'lineplot-r = lineplot.lineplot:LinePlotRPlugin',
             'lollipop-plot-r = lollipop_plot.lollipop_plot:LollipopPlotRPlugin',
