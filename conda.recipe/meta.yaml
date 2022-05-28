@@ -1,7 +1,7 @@
 {% set data = load_setup_py_data() %}
 
 package:
-  name: biovis-rbase-plugins
+  name: biovis-rbased-plugins
   version: {{ data.version }}
 
 
@@ -67,5 +67,5 @@ about:
 
   summary: {{ data.description }}
   description: {{ data.description }}
-  doc_url: https://github.com/biovis-report/biovis-rbase-plugins/blob/master/README.md
+  doc_url: https://github.com/biovis-report/biovis-rbased-plugins/blob/master/README.md
   dev_url: {{ data.url }}

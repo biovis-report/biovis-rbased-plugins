@@ -4,11 +4,11 @@ def get_version():
     return '0.5.0'
 
 setup(
-    name='biovis-rbase-plugins',
+    name='biovis-rbased-plugins',
     version=get_version(),
     description='A set of R based plugins for biovis-report to draw interactive plots.',
     keywords='biovis-plugin',
-    url='https://github.com/biovis-report/biovis-base-plugins',
+    url='https://github.com/biovis-report/biovis-rbased-plugins',
     author='Jingcheng Yang',
     author_email='yjcyxky@163.com',
     license='MIT',

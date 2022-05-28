@@ -1,5 +1,5 @@
 dist/
-biovis_rbase_plugins.egg-info/
+biovis_rbased_plugins.egg-info/
 *.pyc
 __pycache__
 .DS_Store
