@@ -20,6 +20,7 @@ requirements:
 
   run:
     - python {{ python }}
+    - r-base
     - biovis-report ~=0.5
     - r-dplyr
     - r-shiny
