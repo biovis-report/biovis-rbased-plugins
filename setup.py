@@ -42,7 +42,7 @@ setup(
             'lineplot-r = lineplot.lineplot:LinePlotRPlugin',
             'lollipop-plot-r = lollipop_plot.lollipop_plot:LollipopPlotRPlugin',
             'rocket-plot-r = rocket_plot.rocket_plot:RocketPlotRPlugin',
-            'scatter-plot = scatter_plot.scatter_plot:ScatterPlotRPlugin',
+            'scatter-plot-r = scatter_plot.scatter_plot:ScatterPlotRPlugin',
             'stack-barplot-r = stack_barplot.stack_barplot:StackBarPlotRPlugin',
             'upset-r = upset.upset:UpsetRPlugin',
             'violin-plot-r = violin_plot.violin_plot:ViolinPlotRPlugin'
